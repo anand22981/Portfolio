@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel ="stylesheet" href ="sytle.css">
+    <script src="https://kit.fontawesome.com/ccbbc4b404.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div id="header">
+
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                    
+                </ul>
+
+
+            </nav>
+            <div class ="header-text">
+
+                <P>Software Engineer</P>
+
+                <h1>Hi, I'm <span>Anand</span> <br>From Bihar</h1>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div>
+        <div id ="about">
+            <div class="container">
+
+                <div class="row">
+
+                    <div class ="about-col-1">
+
+                        <img src = "/Users/anand./portfolio/anand.png">
+
+                    </div>
+
+                    <div class ="about-col-2" >
+
+                        <h1 class = "sub-title"> About Me</h1>
+
+                        <p> Hello! I'm Anand, a dedicated professional with a Bachelor's degree in Computer Science and Engineering (CSE) and 
+                            1.5 years of hands-on experience in the field of technology. With a strong academic background and valuable industry insights,
+                            I'm passionate about leveraging my skills and expertise to drive innovation and deliver impactful solutions.
+                            
+
+                            <div class ="tab-titles">
+                               <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                               <p class="tab-links"onclick="opentab('experience')">Experience</p>
+                               <p class="tab-links"onclick="opentab('education')">Education</p>
+
+
+                            </div>
+
+                            <div class = "tab-contents active-tab" id ="skills" > 
+                                <ul>
+
+                                    <li><span>Web Development</span><br>Web app Development</li>
+                                    <li><span>App Development</span><br>Bulding andriod/ios Development</li>
+                                    
+
+                                </ul>
+                            </div>
+
+                            <div class = "tab-contents" id ="experience">
+                                <ul>
+
+                                    <li><span>Software engineer(2022 - Present)</span><br>Sap Basis</li>
+                                    
+
+                                </ul>
+                            </div>
+
+                            <div class = "tab-contents" id ="education">
+                                <ul>
+
+                                    <li><span>B.Tech(2018 - 2022)</span><br>Computer Science Engineer</li>
+
+                                    <li><span>12th(2017 - 2018)</span><br>St.Paul sr secondary school</li>
+                                    
+                                    <li><span>10th(2015 - 2016)</span><br>New holy ganges public school</li>
+                                    
+
+                                </ul>
+                            </div>
+    
+    
+    
+                        </p >
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div id="services">
+
+        <div id="container">
+
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+          
+              <div>
+                 <i class="fa-solid fa-code"></i>
+                 <h2> Web development</h2>
+
+                 <P>As a passionate web developer, I specialize in creating modern, 
+                  responsive, and user-friendly websites that leave a lasting
+                 impression. With a keen eye for design and a strong foundation 
+                 in front-end and back-end technologies, I bring 
+                 ideas to life through clean code and innovative solutions.</P>
+                 <a href="#">Learn More</a>
+
+                </div> 
+
+
+               <div>
+                  <i class="fa-brands fa-android"></i>
+                  <h2> App development</h2>
+
+                  <P>As a dedicated mobile app developer, I specialize
+                     in crafting intuitive and feature-rich applications 
+                     for  Android platforms. With a strong emphasis 
+                     on user experience and performance, I leverage a variety of
+                      technologies and frameworks to deliver high-quality mobile
+                     solutions 
+                    that meet the needs of clients and users alike..</P>
+                  <a href="#">Learn More</a>
+
+                </div> 
+
+
+            </div>
+
+        </div>
+        
+
+        
+      
+
+    </div>
+
+
+<script>
+
+    var tablinks     = document.getElementsByClassName("tab-links");
+    var tabcontents  = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+       for(tablink of tablinks){
+           tablink.classList.remove("active-link");
+       }
+    
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+    }
+
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+
+</script>
+    
+</body>
+</html>
